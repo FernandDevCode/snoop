@@ -1,13 +1,19 @@
 {
-  "name": "snoop",
+  "name": "backend",
   "version": "1.0.0",
-  "main": "src/js/main.js",
+  "main": "server.js",
   "scripts": {
-    "start": "electron .",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "IWAJU Tech",
   "license": "ISC",
-  "description": "Application d'asces a distance"
+  "description": "Application d'asces a distance",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "ws": "^8.18.3"
+  }
 }
