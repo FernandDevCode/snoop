@@ -1,0 +1,358 @@
+/* style.css */
+
+/* =================================== */
+/* STYLES COMMUNS À TOUTES LES PAGES   */
+/* =================================== */
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+    color: #4a5568;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    background-color: #5a67d8;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0; /* Empêche le sidebar de rétrécir */
+    background-color: #5a67d8;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.nav-menu {
+    flex-grow: 1;
+    margin-top: 2rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: #4c58b8;
+}
+
+.nav-link i {
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #fff;
+    border-top-left-radius: 80px;
+}
+
+.content-wrapper {
+    padding: 2rem 3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.main-header-user {
+    display: flex;
+    align-items: center;
+}
+
+.main-header-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.main-header-user .user-info {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.search-bar input {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    width: 300px;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.header-actions .notification-bell {
+    font-size: 1.5rem;
+    color: #718096;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.header-actions .btn-disconnect {
+    background-color: #5a67d8;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+}
+
+.header-actions .btn-disconnect:hover {
+    background-color: #4c58b8;
+    color: white;
+}
+
+
+/* =================================== */
+/* STYLES SPÉCIFIQUES - PAGE ACCUEIL   */
+/* =================================== */
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.info-card {
+    background-color: #5a67d8;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    flex-basis: 48%;
+}
+
+.info-card .label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.info-card .value {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.info-card .password {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.illustration-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 48%;
+}
+
+.illustration-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.remote-access-card {
+    background-color: #e9eef8;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remote-access-form {
+    flex-basis: 50%;
+}
+
+.remote-access-card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #6a77d8;
+}
+
+.remote-access-card .form-control {
+    border: 1px solid #d32f2f;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+}
+
+.remote-access-card .btn-connect {
+    background-color: #5a67d8;
+    color: white;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    border: none;
+}
+
+.remote-access-card .btn-connect i {
+    margin-left: 10px;
+}
+
+.remote-access-illustration {
+    flex-basis: 40%;
+    text-align: right;
+}
+
+.remote-access-illustration i {
+    font-size: 10rem;
+    color: #d1d8f5;
+    opacity: 0.6;
+}
+
+/* =================================== */
+/* STYLES SPÉCIFIQUES - PAGE CHAT      */
+/* =================================== */
+
+.chat-container {
+    display: flex;
+    height: 75vh;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.contacts-list {
+    width: 30%;
+    border-right: 1px solid #e2e8f0;
+    background-color: #f7fafc;
+}
+
+.chat-window {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: #e9eef8;
+}
+
+.chat-input {
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.chat-input .form-control {
+    border-radius: 20px;
+}
+
+.message {
+    margin-bottom: 1rem;
+}
+
+.message .bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 15px;
+    max-width: 80%;
+    display: inline-block;
+}
+
+.message.sent {
+    text-align: right;
+}
+
+.message.sent .bubble {
+    background-color: #5a67d8;
+    color: white;
+}
+
+.message.received .bubble {
+    background-color: #e2e8f0;
+}
+
+
+/* =================================== */
+/* STYLES SPÉCIFIQUES - PAGE HISTORIQUE*/
+/* =================================== */
+
+.history-table th {
+    background-color: #e9eef8;
+    color: #5a67d8;
+}
+
+
+/* =================================== */
+/* STYLES SPÉCIFIQUES - PAGE PARAMETRE */
+/* =================================== */
+
+.settings-card {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.settings-card h5 {
+    color: #5a67d8;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.btn-save {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+}
+
+.btn-save:hover {
+    background-color: #4c58b8;
+    color: white;
+}
+

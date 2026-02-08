@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix d'Abonnement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <a href="#" class="back-arrow"> </a>
+            <h1> CHOIX D'ABONNEMENT</h1>
+        </header>
+        <main class="subscription-container">
+            <!-- Option 1: Abonnement à la carte -->
+            <section class="subscription-card pink-card">
+                <h2>À PARTIR DE 490 FCFA</h2>
+                <p class="subtitle">Choix multiples :</p>
+                <ul>
+                    <li>✓ Souscrire pour 30 minute</li>
+                    <li>✓ Souscrire pour 1 heure</li>
+                    <li>✓ Souscrire pour 2 heure</li>
+                    <li>✓ Souscrire pour 3 heure</li>
+                    <li>✓ Souscrire pour 4 heure</li>
+                    <li>✓ Au delà de 5 heure</li>
+                </ul>
+                <button class="btn">Abonnement</button>
+            </section>
+
+            <!-- Option 2: Abonnement Mensuel -->
+            <section class="subscription-card blue-card">
+                <div class="price">4.900 FCFA</div>
+                <button class="btn-main">Abonnement mensuel</button>
+                <p class="card-note">Carte de crédit non requis*.</p>
+                <div class="icon-container">
+                    <!-- Vous pouvez placer une image ou un SVG ici -->
+                    <img src="image.png" alt="Icône de diamant">
+                </div>
+            </section>
+        </main>
+    </div>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+            body, html {
+                margin: 0;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                background-color: #6a82fb;
+                color: white;
+            }
+
+            .background {
+                padding: 20px;
+            }
+
+            header {
+                text-align: center;
+                position: relative;
+                margin-bottom: 40px;
+            }
+
+            header h1 {
+                font-weight: 900;
+                font-size: 2.5em;
+            }
+
+            .back-arrow {
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: white;
+                text-decoration: none;
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            .subscription-container {
+                display: flex;
+                justify-content: center;
+                align-items: stretch; /* Fait en sorte que les cartes aient la même hauteur */
+                background-color: white;
+                border-radius: 25px;
+                max-width: 900px;
+                margin: auto;
+                width: 384;
+                height: 483;
+                top: 223px;
+                left: 679px;
+                padding: 15px;
+                gap: 15px;
+                opacity: 1;
+
+                
+            }
+
+            .subscription-card {
+                flex: 1; /* Permet aux deux cartes de prendre une place égale */
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 384;
+                height: 483;
+                top: 223px;
+                left: 241px;
+                border-radius: 25px;
+                padding: 25px;
+                gap: 15px;
+                opacity: 1;
+                margin: 35px;
+                width: 384;
+                
+
+
+            }
+
+            /* Style de la carte rose */
+            .pink-card {
+                background-color: #ff3c83;
+                
+            }
+
+            .pink-card h2 {
+                font-size: 1.8em;
+                margin-top: 0;
+            }
+
+            .pink-card .subtitle {
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            .pink-card ul {
+                list-style: none;
+                padding: 0;
+                text-align: left;
+                margin-bottom: 30px;
+                flex-grow: 1; /* Pousse le bouton vers le bas */
+            }
+
+            .pink-card li {
+                margin-bottom: 10px;
+            }
+
+            .pink-card .btn {
+                background-color: white;
+                color: #ff3c83;
+                border: none;
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 1em;
+                font-weight: bold;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            /* Style de la carte bleue */
+            .blue-card {
+                background-color: #3d63ff;
+            }
+
+            .blue-card .price {
+                font-size: 3.5em;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+
+            .blue-card .btn-main {
+                background-color: white;
+                color: #3d63ff;
+                border: none;
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 1em;
+                font-weight: bold;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .blue-card .card-note {
+                font-size: 0.8em;
+            }
+
+            .blue-card .icon-container {
+                background-color: white;
+                border-radius: 15px;
+                padding: 20px;
+                margin-top: 20px;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 325;
+                height: 250;
+                border-radius: 14px;
+                padding: 10px;
+                gap: 10px;
+                opacity: 1;
+
+            }
+
+            .blue-card .icon-container img {
+                max-width: 1500px; /* Ajustez la taille de votre icône */
+            }
+
+            /* Pour les écrans plus petits */
+            @media (max-width: 768px) {
+                .subscription-container {
+                    flex-direction: column;
+                }
+            }
+        </style>
+                            
+
+</body>
+</html>
